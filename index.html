@@ -21,7 +21,7 @@ title: "Fernando Saldaña"
       border-radius: 8px;
     }
     .section {
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
     .btn-custom {
       margin: 0.3rem;
@@ -38,7 +38,10 @@ title: "Fernando Saldaña"
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">Fernando Saldaña</a>
-      <div class="collapse navbar-collapse">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="https://scholar.google.com/citations?user=w-C-VCYAAAAJ&hl=en" target="_blank">Scholar</a></li>
@@ -49,35 +52,32 @@ title: "Fernando Saldaña"
   </nav>
 
   <main class="container mt-5">
-    <div class="row align-items-center">
-      <!-- Profile Picture -->
-      <div class="col-md-4 text-center mb-4 mb-md-0">
+    <div class="row align-items-start">
+      <!-- Profile & Links Column -->
+      <div class="col-md-4 text-center mb-4">
         <img src="2C4901BF-61AC-4DEF-BA24-770A8F133ED8_1_105_c.jpeg" alt="Fernando Saldaña" class="profile-img shadow-sm" />
+        <div class="mt-3">
+          <a href="https://orcid.org/0000-0003-0558-1169" target="_blank" class="btn btn-outline-secondary btn-custom">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=w-C-VCYAAAAJ&hl=en" target="_blank" class="btn btn-outline-info btn-custom">Google Scholar</a>
+        </div>
       </div>
 
-      <!-- Name and Title -->
-      <div class="col-md-8 text-md-start text-center">
+      <!-- Information Column -->
+      <div class="col-md-8">
         <h1>Fernando Saldaña</h1>
         <p class="lead text-muted">Postdoctoral Researcher in Mathematical Epidemiology</p>
+
+        <!-- About -->
+        <div class="section" id="about">
+          <h3>Profile</h3>
+          <p>
+            I’m an applied mathematician currently working on the mathematical modeling of infectious diseases. In general, I’m interested in using mathematical modeling and simulation methods to problems in biology, ecology, and public health. I have significant experience in the analysis and formulation of Kermack-McKendrick-type models, stochastic modeling, Python programming, optimal control theory, machine learning, statistical methods, and parameter inference.
+          </p>
+          <p>
+            I am currently a postdoctoral researcher at the <a href="https://www.inrae.fr/" target="_blank">INRAE</a> (French National Research Institute for Agriculture, Food and Environment), within the BIOEPAR team.
+          </p>
+        </div>
       </div>
-    </div>
-
-    <!-- About -->
-    <div class="section" id="about">
-      <h3>Profile</h3>
-      <p>
-        I’m an applied mathematician currently working on the mathematical modeling of infectious diseases. In general, I’m interested in using mathematical modeling and simulation methods to problems in biology, ecology, and public health. I have significant experience in the analysis and formulation of Kermack-McKendrick-type models, stochastic modeling, Python programming, optimal control theory, machine learning, statistical methods, and parameter inference. In general, I’m open to any projects in the area of mathematical and computational modeling in life sciences applications.
-      </p>
-      <p>
-        I am currently a postdoctoral researcher at the <a href="https://www.inrae.fr/" target="_blank">INRAE</a> (French National Research Institute for Agriculture, Food and Environment), within the BIOEPAR team. 
-      </p>
-    </div>
-
-    <!-- Links -->
-    <div class="section text-center">
-      <h3>Links</h3>
-      <a href="https://orcid.org/0000-0003-0558-1169" target="_blank" class="btn btn-outline-secondary btn-custom">ORCID</a>
-      <a href="https://scholar.google.com/citations?user=w-C-VCYAAAAJ&hl=en" target="_blank" class="btn btn-outline-info btn-custom">Google Scholar</a>
     </div>
   </main>
 
@@ -88,3 +88,4 @@ title: "Fernando Saldaña"
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
